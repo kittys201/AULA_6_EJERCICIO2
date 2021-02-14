@@ -1,100 +1,131 @@
-* {
-    box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-    margin: 0;
-    padding-top: 65px;
+	line-height: 1;
 }
-.top {
-    top: 0;
-    position: fixed;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: white;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+ol, ul {
+	list-style: none;
 }
-
-nav div {
-    display: flex;
-    align-items: center;
-    
+blockquote, q {
+	quotes: none;
 }
-nav button + button {
-    margin-left: 13px;
-
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-.contener1 {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "principal principal principal principal";
-    display: flex;
-}
-.art{
-    grid-area: principal;
-}
-main header {
-    display: flex;
-}
-.contener2 {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "A0 A1 A2 "
-                         "A0 A1 A2 "   
-                         "A0 A1 A2 ";
- }    
-
-.art0{
-    grid-area: A0;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-   
-}
-.art1{
-    grid-area: A1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-   
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+@media(min-width: 1024px){
 
-.art7{
-    grid-area: A2;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-  img h1 figure section div{
-    display: flex;
-   }
-.contener3{
+			html { 
 
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "area1 area2 ";
+				margin: 3pc;
+			}
 
-}
+			.imax { 
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 5px;
+				width: 833px;
+				height: 497px;
+			
+			}
+				h1 {
+					font-weight: bold;
+					font-size: 89px;
+					color: #FFB300;
+					line-height: 79px;
+			
+				}
 
-.links{
-    grid-area: area2;
-    
+				.autor{
+					font-weight: bold;
+					font-size: 21px;
+					color:black;
+					text-align: right;
+				}
+			
+				p{
+					font-weight: semibold;
+					font-size: 21px;
+					color: black;
+					line-height: 1.61;
+					text-align: justify;
+					padding-bottom: 34px;
+			
+				}
+				.ingre {
+					font-weight: bold;
+					font-size: 34px;
+					color: #FFB300;
+					}
+			
+				.unorder {
+			
+						font-weight: semibold;
+						font-size: 21px;
+						line-height: 21px*1.61;
+						}
+			
+				.order{
+					font-weight: semibold;
+					font-size: 21px;
+					line-height: 21px*1.61;
+			
+				}   
+			
+				iframe{
+					border: 1px solid #ddd;
+				
+				padding: 5px;
+				width: 833px;
+				height: 497px;
+			
+				}
+			
+				nav{
+					font-weight: bolder;
+					font-size: 21px;
+					color: #0037B3;
+					margin: 3px;
+			
+				}
+			
+				h2 + div {
 
-}
+					margin = 20px;
+				}
 
- }
-.final {
-
-    grid-area: area1;
-
-}
-
-ul.none {
-	list-style-type: none;
 	}
